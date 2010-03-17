@@ -85,22 +85,22 @@ class PagesViz < Processing::App
 
       # If we have a full info about a page, determine it's color
       if pagenum
-        c = color 255, 255, 255       # Free-free (3)
+        c = color 0, 0, 0       # Free-free (3)
 
         if vnode == @kvp              # Kernel (1)
           c = color 0, 0, 255
 
         elsif vnode == @zvp           # ZFS (6)
-          c = color 128, 0, 128
+          c = color 255, 0, 255
 
         elsif (state & 0x80) != 0     # Free-cache (5)
-          c = color 128, 128, 0
+          c = color 255, 255, 0
 
         elsif (vflag & 0x20000) != 0  # Anon (2)
           c = color 255, 0, 0
 
         elsif (vflag & 0x1000) != 0   # Exec (7)
-          c = color 0, 128, 128
+          c = color 0, 255, 255
 
         elsif vnode =~ /0x.*/         # VNode (4)
           c = color 0, 255, 0
@@ -164,22 +164,22 @@ class PagesViz < Processing::App
 
       # If we have a full info about a page, determine it's color
       if pagenum
-        c = color 255, 255, 255       # Free-free (3)
+        c = color 0, 0, 0       # Free-free (3)
 
         if vnode == @kvp              # Kernel (1)
           c = color 0, 0, 255
 
         elsif vnode == @zvp           # ZFS (6)
-          c = color 128, 0, 128
+          c = color 255, 0, 255
 
         elsif (state & 0x80) != 0     # Free-cache (5)
-          c = color 128, 128, 0
+          c = color 255, 255, 0
 
         elsif (vflag & 0x20000) != 0  # Anon (2)
           c = color 255, 0, 0
 
         elsif (vflag & 0x1000) != 0   # Exec (7)
-          c = color 0, 128, 128
+          c = color 0, 255, 255
 
         elsif vnode =~ /0x.*/         # VNode (4)
           c = color 0, 255, 0
