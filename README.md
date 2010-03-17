@@ -25,7 +25,7 @@ That is, we want to show each page of the different types (e.g., kernel, zfs,
 anon, exec, etc.) in a different color. However, we want to also update this
 visualization so we employ [dtrace][2] probes to keep the view updated.
 
-![Alt text](screenshot.png)
+![Solaris Pages Viz Screenshot](http://github.com/dxoigmn/solaris-pages-viz/blob/master/screenshot.png?raw=true)
 
 ## mdb
 
