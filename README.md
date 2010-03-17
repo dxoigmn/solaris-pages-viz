@@ -131,9 +131,9 @@ If you have ruby and rubygems installed, it's as simply as:
 
     $ gem install ruby-processing
 
-Then you should be able to run `solaris_pages_viz.rb`:
+Then you should be able to run `solaris_pages_viz.rb` using the following:
 
-    $ ./solaris_pages_viz.rb
+    $ rp5 run solaris_pages_viz.rb
 
 
 [1]: http://docs.sun.com/app/docs/doc/816-5041
