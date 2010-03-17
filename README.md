@@ -120,6 +120,21 @@ page state. We map the colors in the following way:
   * Free (freelist) - Black
   * Unknown - White
 
+## dependencies
+
+The following are dependencies:
+
+  * [ruby][10]
+  * [ruby-processing][9] 1.0.9 gem
+
+If you have ruby and rubygems installed, it's as simply as:
+
+    $ gem install ruby-processing
+
+Then you should be able to run solaris\_pages\_viz.rb:
+
+    $ ./solaris\_pages\_viz.rb
+
 
 [1]: http://docs.sun.com/app/docs/doc/816-5041
 [2]: http://www.sun.com/bigadmin/content/dtrace/index.jsp
@@ -129,3 +144,5 @@ page state. We map the colors in the following way:
 [6]: http://src.opensolaris.org/source/xref/onnv/onnv-gate/usr/src/uts/common/sys/vnode.h#1342
 [7]: http://src.opensolaris.org/source/xref/onnv/onnv-gate/usr/src/uts/common/fs/vnode.c#4037
 [8]: http://wikis.sun.com/display/DTrace/vminfo+Provider
+[9]: http://wiki.github.com/jashkenas/ruby-processing/
+[10]: http://www.ruby-lang.org/
